@@ -12,11 +12,14 @@ False
 def Sorting(L):
     if len(L)==0 or len(L)==1:
         return True
-    element_n_1 = Sorting(L[:len(L)-2])
+    if L[0]>L[1]:
+        return False
+    smallerList = L[1:]
+    issmallerlistsorted = Sorting(smallerList)
     
-    if L[len(L)-2]<=L[len(L)-1]:
+    if issmallerlistsorted:
         return True
-    else:
+    else :
         return False
 
 if __name__=="__main__":
