@@ -9,7 +9,19 @@ True
 
 
 def BetterSorting(l,el):
-    if l[0]==el or l[len(l)-1] ==el :
+    length = len(l)
+    
+    if el == length -1 or length == 1 :
         return True
-    if l[li]>l[li +1]:
+    if l[el] > l[el +1]:
         return False
+    check_for_sorting = BetterSorting(l,el+1)
+    if check_for_sorting == True:
+        return True
+    else: 
+        return False
+
+if __name__=='__main__':
+        input_array = eval(input('enter the array with square brackes : '))
+        Start_index = int(input('enter the index from where you want to start checking for sorting:  '))
+        print(BetterSorting(input_array,Start_index))

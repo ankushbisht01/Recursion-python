@@ -14,7 +14,6 @@ def Search(l,x):
         last_element = Search(l[:len(l)-1],x)
         return last_element
     except IndexError:
-        
         return 'Didnt present in the array'
     
 def Search2(N,L,x):
