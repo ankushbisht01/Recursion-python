@@ -12,7 +12,7 @@
 
 def febon(n):
     if n == 1 or n==2:
-        return 1
+        return True
     fabi_n_1 = febon(n-1)
     fabi_n_2 = febon(n-2)
     sum = fabi_n_1 + fabi_n_2
