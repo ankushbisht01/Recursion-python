@@ -14,9 +14,9 @@ Integer W
 def staircase(n):
     
     if n==3:
-       return 6
+       return 3
     if n==2:
-        return 3
+        return 2
     if n ==1:
        return 1
 
@@ -25,7 +25,7 @@ def staircase(n):
     z = staircase(n-3)
     
     
-    return x +y + z +3
+    return x +y + z 
    
        
 def main():
