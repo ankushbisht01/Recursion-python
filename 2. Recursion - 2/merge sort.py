@@ -24,7 +24,7 @@ def merge(a1,a2,a):
         a[k] = a2[j]
         k=k+1
         j=j+1
-    return a 
+    a 
 
 
 
@@ -38,10 +38,10 @@ def mergesort(a):
     mergesort(a1)
     mergesort(a2)
     
-    return merge(a1,a2,a)
+    merge(a1,a2,a)
    
     
 
 l3 = [10,23,43,2,2,3,5,4]
 
-print(mergesort(l3))
+(mergesort(l3))
